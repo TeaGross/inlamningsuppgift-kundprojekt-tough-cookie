@@ -3,7 +3,6 @@ body {
 }
 
 main {
-    border: 2px solid black;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 16px;
@@ -21,6 +20,7 @@ header {
         display: grid;
         gap: 16px;
         grid-template-columns: repeat(11, 1fr);
+        height: 50vh;
     }
 }
 
