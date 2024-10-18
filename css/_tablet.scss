@@ -39,3 +39,35 @@ body {
     }
 }
 
+
+.page2 {
+    background-color: rgb(189, 253, 253);
+    grid-column: span 11;
+    min-height: 100vh;
+
+    .top,
+    .menu {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(11, 1fr);
+    }
+    .top {
+        height: 30vh;
+    
+        .img {
+            grid-column: span 3;
+            border: 3px solid black; // endast för att se hur de lägger sig
+        }
+    }
+    
+    .menu {
+        height: 70vh;
+    
+        .menuitem {
+            grid-column: span 4;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+
