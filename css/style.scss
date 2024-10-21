@@ -1,3 +1,13 @@
+@function rem($size) {
+  @return calc($size / 16) * 1rem;
+}
+
+$green-color: #00ff38;
+
+$yellow-color: #fff236;
+
+$purple-color: #AA75FF;
+
 @import 'vendor/normalize';
 
 @import 'mobile';
@@ -10,12 +20,5 @@
   @import 'desktop';
 }
 
-@function rem($size) {
-  @return calc($size / 16) * 1rem;
-}
 
-$green-color: #00ff38;
 
-$yellow-color: #fff236;
-
-$purple-color: #AA75FF;

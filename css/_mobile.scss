@@ -97,3 +97,16 @@ input:checked + .menu nav{
     padding-top: 10vh; // är det rimligt att ha padding?
 
 }
+
+.page2{
+    background-color: rgb(241, 241, 175);
+}
+
+.page3{
+    background-color: rgb(222, 222, 58);
+
+    .cookies{
+        position: fixed;
+        bottom: 0;
+    }
+}

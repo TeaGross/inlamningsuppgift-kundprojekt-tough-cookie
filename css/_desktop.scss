@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(110, 250, 110);
+    background-color: rgb(132, 219, 142);
 }
 
 main {
@@ -12,7 +12,7 @@ header {
     flex-direction: column;
     height: 100vh;
     align-items: center;
-    width: 10vh; // ändrar värdet från mobile och tablet (0vw), annars täcker headern hela skärmen
+    width: 5vw; // ändrar värdet från mobile och tablet (0vw), annars täcker headern hela skärmen
 
     h1 {
         writing-mode: vertical-lr;
@@ -64,4 +64,10 @@ header {
     .text {
         grid-column: span 6;
     }
+}
+
+.page1,
+.page2,
+.page3{
+    padding-left:  5vw;
 }
