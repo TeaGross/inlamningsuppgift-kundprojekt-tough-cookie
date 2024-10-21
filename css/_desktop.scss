@@ -8,28 +8,39 @@ main {
     gap: rem(16);
 }
 
+
 header {
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     align-items: center;
-    width: 5vw; // ändrar värdet från mobile och tablet (0vw), annars täcker headern hela skärmen
+    width: 100%; 
+    grid-row: span 3;
+    position: static;
 
+    nav{
+        left: calc(100vw/12 - rem(16)); // gör att naven lägger sig BREDVID headern. Calc=uträkning 100vw är hela skärmen/ 12 grid-colums och minus ett gap(16px).
+    }
+   
     h1 {
         writing-mode: vertical-lr;
         text-orientation: upright;
+        position: fixed;
+        left: 1vw;
+        top: 30vh;
+
 
     }
 
     button {
         left: rem(20); // hamburgermenyn
-        top: rem(20); 
-       
+        top: rem(20);
+
     }
 
     .checkbox {
         left: rem(20); // hamburgermenyn
         top: rem(20);
-       
+
     }
 }
 
@@ -64,10 +75,4 @@ header {
     .text {
         grid-column: span 6;
     }
-}
-
-.page1,
-.page2,
-.page3{
-    padding-left:  5vw;
 }
