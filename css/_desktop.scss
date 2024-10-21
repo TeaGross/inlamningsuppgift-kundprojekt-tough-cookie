@@ -5,7 +5,7 @@ body {
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 16px;
+    gap: rem(16);
 }
 
 header {
@@ -21,14 +21,14 @@ header {
     }
 
     button {
-        left: 20px; // hamburgermenyn
-        top: 20px; 
+        left: rem(20); // hamburgermenyn
+        top: rem(20); 
        
     }
 
     .checkbox {
-        left: 20px; // hamburgermenyn
-        top: 20px;
+        left: rem(20); // hamburgermenyn
+        top: rem(20);
        
     }
 }
@@ -40,7 +40,7 @@ header {
     .top,
     .bottom {
         display: grid;
-        gap: 16px;
+        gap: rem(16);
         grid-template-columns: repeat(11, 1fr);
         height: 50vh;
     }

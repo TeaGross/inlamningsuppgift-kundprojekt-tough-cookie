@@ -17,32 +17,32 @@ header{
 }
 
  button{
-    width: 35px;
-    height: 35px;
+    width: rem(35);
+    height: rem(35);
     background: transparent;
     border: 0;
     position: fixed;
-    right: 20px;
+    right: rem(20);
     //top: 20px; behövs inte? eftersom jag satt margin: 0 på button precis som med h1
     z-index: 2;
     pointer-events: none;
     margin: 0;
     span{
         display: block;
-        width: 25px;
-        height: 3px;
+        width: rem(25);
+        height: rem(3);
         background-color: rgb(255, 255, 255);
-        border-radius: 6px;
-        margin-bottom: 4px;
+        border-radius: rem(6);
+        margin-bottom: rem(4);
     }  
 }
 
 .checkbox{
     position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 35px;
-    height: 35px;
+    top: rem(20);
+    right: rem(20);
+    width: rem(35);
+    height: rem(35);
     z-index: 1;
     opacity: 0;
 }
@@ -95,4 +95,5 @@ input:checked + .menu nav{
 
 .page1{
     padding-top: 10vh; // är det rimligt att ha padding?
+
 }
