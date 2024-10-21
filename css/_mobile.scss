@@ -8,6 +8,8 @@ header{
     background-color: black;
     color: rgb(255, 255, 255);
     height: 10vh;
+    width: 100vw;
+    position: fixed;
     h1{
         //margin: 0;  tog bort, vill ha header längre ner   
         text-transform: uppercase;
@@ -89,4 +91,8 @@ input:checked + .menu nav{
     display: block;
     opacity: 1;
     visibility: visible;
+}
+
+.page1{
+    padding-top: 10vh; // är det rimligt att ha
 }
