@@ -81,7 +81,6 @@ header{
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    
     ul{
       margin: 0;
       padding: 0;
@@ -108,38 +107,60 @@ header{
 }
 .page1{
   background-color: black;
-}
+  // border-left: rem(16) solid $yellow-color;
+  // border-right: rem(16) solid $yellow-color; bättre att lägga dessa i varje version! endast top i moiblversion
+  
+  .page-title{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25vh;
+    h2{
+      font-family: $font-main, sans-serif;
+      text-transform: uppercase;
+      position: absolute;
+    }
+    .tahini{
+      color: $green-color;
+      top: rem(50);
+      font-size: rem(60);
+      // varför syns tahini när jag öppnar nav-menyn?
+    }
+    .drizzle{
+      color: $purple-color;
+      top: rem(69);
+      left: 50%; // kan man använda %?
+    }
+    .chickpeas{ // denna vill inte stylas? är den i förhållande till något annat?
+      color: $yellow-color;
+      bottom: rem(-15);
+      left: 40%; // kan man använda %? just med left blir stylingen knasig, vad är det i förhållande till?
+      // just nu fungerar inte stylingen på tablet och desktop...
+    }
+  }
 
-.page-title{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 25vh;
-  h2{
+  article{
     font-family: $font-main, sans-serif;
-    text-transform: uppercase;
-    position: absolute;
   }
-  .tahini{
+
+  .text1{
     color: $green-color;
-    top: rem(50);
-    z-index: 1;
-    font-size: rem(60);
   }
-  .drizzle{
+  .text2{
     color: $purple-color;
-    top: rem(69);
-    left: 50%; // kan man använda %?
-  }
-  .chickpeas{ // denna vill inte stylas? är den i förhållande till något annat?
-    color: $yellow-color;
-    bottom: rem(-15);
-    left: 40%; // kan man använda %? just med left blir stylingen knasig, vad är det i förhållande till?
-  // just nu fungerar inte stylingen på alla!
+    background-color: white;
+    border-left: rem(16) solid $yellow-color; // funkar inte!
   }
 }
 
+.page2{
+  background-color: $yellow-color;
+}
+  
+.page3{
+  background-color: $green-color;
+}
 
 
 @import 'vendor/normalize';
