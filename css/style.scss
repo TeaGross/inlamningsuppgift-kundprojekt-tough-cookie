@@ -157,6 +157,15 @@ header {
 
   article {
     font-family: $font-main, sans-serif;
+    span{
+      font-family: $font-main;
+      text-transform: uppercase;
+      color: black;
+      font-size: rem(25);
+    }
+    img{
+      width: rem(25);
+    }
   }
 
   .text1 {
@@ -222,6 +231,11 @@ header {
 
 .page3 {
   background-color: $green-color;
+
+  form > h3{
+    font-family: $font-main;
+    text-transform: uppercase;
+  }
 
   .cookies{
     background-color: $purple-color
