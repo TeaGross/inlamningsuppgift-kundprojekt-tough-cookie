@@ -264,7 +264,10 @@ header {
   }
 
   .cookies {
-    background-color: $purple-color
+    background-color: $purple-color;
+   p{
+    color: white;
+   }
   }
 }
 
