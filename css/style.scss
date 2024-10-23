@@ -75,7 +75,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(202, 89, 202);
+    background-color: $purple-color;
     width: 100vw;
     height: 100vh;
     visibility: hidden;
@@ -91,6 +91,12 @@ header{
       height: 100%;
       justify-content: space-evenly;
       text-align: center;
+
+      li{
+        font-family: $font-main, sans-serif;
+        font-size: rem(35);
+        text-transform: uppercase;
+      }
     }
   }
   
@@ -100,6 +106,42 @@ header{
     visibility: visible;
   }
 }
+.page1{
+  background-color: black;
+}
+
+.page-title{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 25vh;
+  h2{
+    font-family: $font-main, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+  }
+  .tahini{
+    color: $green-color;
+    top: rem(50);
+    z-index: 1;
+    font-size: rem(60);
+  }
+  .drizzle{
+    color: $purple-color;
+    top: rem(69);
+    left: 50%; // kan man använda %?
+  }
+  .chickpeas{ // denna vill inte stylas? är den i förhållande till något annat?
+    color: $yellow-color;
+    bottom: rem(-15);
+    left: 40%; // kan man använda %? just med left blir stylingen knasig, vad är det i förhållande till?
+  // just nu fungerar inte stylingen på alla!
+  }
+}
+
+
+
 @import 'vendor/normalize';
 
 @import 'mobile';
