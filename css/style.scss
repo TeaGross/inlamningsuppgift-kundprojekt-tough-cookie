@@ -173,6 +173,20 @@ header {
 .page2 {
   background-color: $yellow-color;
 
+  .top{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  // .img{
+  //   width: 50vw;
+  //   height: 50px;
+  //   img{
+  //     width: 75%;
+  //   }
+  }
+
   .menuitem {
     background-color: white;
     border-top: 2px solid black;
@@ -206,6 +220,10 @@ header {
 
 .page3 {
   background-color: $green-color;
+
+  .cookies{
+    background-color: $purple-color
+  }
 }
 
 
