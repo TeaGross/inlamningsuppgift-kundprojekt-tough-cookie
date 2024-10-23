@@ -16,36 +16,40 @@ $font-sign: 'Courier prime';
 
 
 
-header{
+header {
   background-color: black;
   color: white;
-  h1{
+
+  h1 {
     text-transform: uppercase;
     font-family: $font-main, sans-serif;
-    
+    letter-spacing: rem(5);
+
   }
-  
-  .mainMenu button{
+
+  .mainMenu button {
     width: rem(35);
     height: rem(35);
     background: transparent;
     border: 0;
     position: fixed;
     right: rem(20);
-    top: rem(20); 
+    top: rem(20);
     pointer-events: none;
     margin: 0;
     z-index: 2;
-    span{
+
+    span {
       display: block;
       width: rem(35);
       height: rem(5);
       background-color: $yellow-color;
       border-radius: rem(6);
       margin-bottom: rem(4);
-    }  
+    }
   }
-  .checkbox{
+
+  .checkbox {
     position: fixed;
     top: rem(20);
     right: rem(20);
@@ -54,24 +58,28 @@ header{
     z-index: 1;
     opacity: 0;
   }
-  input:checked + .mainMenu button span{
-    position: absolute;
-    transition: all 0.3s ease-in-out;
+
+  input:checked {
+    &+.mainMenu button span {
+      position: absolute;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &+.mainMenu button span:nth-child(2) {
+      opacity: 0;
+    }
+
+    &+.mainMenu button span:nth-child(1) {
+      transform: rotate(45deg);
+    }
+
+    &+.mainMenu button span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+
   }
-  
-  input:checked + .mainMenu button span:nth-child(2){
-    opacity: 0;
-  }
-  
-  input:checked + .mainMenu button span:nth-child(1){
-    transform: rotate(45deg);
-  }
-  
-  input:checked + .mainMenu button span:nth-child(3){
-    transform: rotate(-45deg);
-  }
-  
-  nav{
+
+  nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -81,7 +89,8 @@ header{
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    ul{
+
+    ul {
       margin: 0;
       padding: 0;
       list-style: none;
@@ -91,48 +100,54 @@ header{
       justify-content: space-evenly;
       text-align: center;
 
-      li{
+      li {
         font-family: $font-main, sans-serif;
         font-size: rem(35);
         text-transform: uppercase;
       }
     }
   }
-  
-  input:checked + .mainMenu nav{
+
+  input:checked+.mainMenu nav {
     display: block;
     opacity: 1;
     visibility: visible;
   }
 }
-.page1{
+
+.page1 {
   background-color: black;
   // border-left: rem(16) solid $yellow-color;
   // border-right: rem(16) solid $yellow-color; bättre att lägga dessa i varje version! endast top i moiblversion
-  
-  .page-title{
+
+  .page-title {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 25vh;
-    h2{
+
+    h2 {
       font-family: $font-main, sans-serif;
       text-transform: uppercase;
       position: absolute;
     }
-    .tahini{
+
+    .tahini {
       color: $green-color;
       top: rem(50);
       font-size: rem(60);
       // varför syns tahini när jag öppnar nav-menyn?
     }
-    .drizzle{
+
+    .drizzle {
       color: $purple-color;
       top: rem(69);
       left: 50%; // kan man använda %?
     }
-    .chickpeas{ // denna vill inte stylas? är den i förhållande till något annat?
+
+    .chickpeas {
+      // denna vill inte stylas? är den i förhållande till något annat?
       color: $yellow-color;
       bottom: rem(-15);
       left: 40%; // kan man använda %? just med left blir stylingen knasig, vad är det i förhållande till?
@@ -140,25 +155,56 @@ header{
     }
   }
 
-  article{
+  article {
     font-family: $font-main, sans-serif;
   }
 
-  .text1{
+  .text1 {
     color: $green-color;
   }
-  .text2{
+
+  .text2 {
     color: $purple-color;
     background-color: white;
     border-left: rem(16) solid $yellow-color; // funkar inte!
   }
 }
 
-.page2{
+.page2 {
   background-color: $yellow-color;
+
+  .menuitem {
+    background-color: white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-evenly;
+
+    h3 {
+      font-family: $font-main, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: rem(2);
+      font-size: rem(25);
+    }
+
+    .sign {
+      font-family: $font-sign, sans-serif;
+    }
+
+    p {
+      font-family: $font-text, sans-serif;
+    }
+
+    span{
+      font-family: $font-main, sans-serif;
+    }
+
+  }
+
 }
-  
-.page3{
+
+.page3 {
   background-color: $green-color;
 }
 
@@ -167,15 +213,10 @@ header{
 
 @import 'mobile';
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   @import 'tablet';
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) {
   @import 'desktop';
 }
-
-
-
-
-
