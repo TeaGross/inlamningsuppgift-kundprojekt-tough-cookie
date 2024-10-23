@@ -157,15 +157,21 @@ header {
 
   article {
     font-family: $font-main, sans-serif;
-    span{
+
+    span {
       font-family: $font-main;
       text-transform: uppercase;
       color: black;
       font-size: rem(25);
+      display: flex;
+      align-items: center;
     }
+
     img{
-      width: rem(25);
+      height: rem(25);
+      margin-left: rem(8);
     }
+    
   }
 
   .text1 {
@@ -182,7 +188,7 @@ header {
 .page2 {
   background-color: $yellow-color;
 
-  .top{
+  .top {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -194,50 +200,70 @@ header {
   //   img{
   //     width: 75%;
   //   }
+}
+
+.menuitem {
+  background-color: white;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-evenly;
+
+  h3 {
+    font-family: $font-main, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: rem(2);
+    font-size: rem(25);
   }
 
-  .menuitem {
-    background-color: white;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-evenly;
-
-    h3 {
-      font-family: $font-main, sans-serif;
-      text-transform: uppercase;
-      letter-spacing: rem(2);
-      font-size: rem(25);
-    }
-
-    .new-label,
-    .vegan-label,
-    .popular-label {
-      font-family: $font-sign, sans-serif;
-    }
-
-    p {
-      font-family: $font-text, sans-serif;
-    }
-
-    span{
-      font-family: $font-main, sans-serif;
-    }
-
+  .new-label,
+  .vegan-label,
+  .popular-label {
+    font-family: $font-sign, sans-serif;
   }
+
+  p {
+    font-family: $font-text, sans-serif;
+  }
+
+  span {
+    font-family: $font-main, sans-serif;
+  }
+
+}
 
 
 
 .page3 {
   background-color: $green-color;
 
-  form > h3{
+  form {
+    h4 {
+      font-family: $font-main;
+      text-transform: uppercase;
+      font-size: rem(30);
+    }
+    label{
+      font-family: $font-main, sans-serif;
+      text-transform: uppercase;
+    }
+  }
+
+  section{
+    li{
+      a{
+        font-family: $font-main;
+      }
+    }
+  }
+
+  .button{
     font-family: $font-main;
     text-transform: uppercase;
   }
 
-  .cookies{
+  .cookies {
     background-color: $purple-color
   }
 }
