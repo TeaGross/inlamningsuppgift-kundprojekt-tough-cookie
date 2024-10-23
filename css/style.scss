@@ -202,7 +202,9 @@ header {
       font-size: rem(25);
     }
 
-    .sign {
+    .new-label,
+    .vegan-label,
+    .popular-label {
       font-family: $font-sign, sans-serif;
     }
 
@@ -216,7 +218,7 @@ header {
 
   }
 
-}
+
 
 .page3 {
   background-color: $green-color;
