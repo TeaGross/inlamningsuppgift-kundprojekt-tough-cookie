@@ -137,21 +137,21 @@ header {
       color: $green-color;
       top: rem(50);
       font-size: rem(60);
-      // varför syns tahini när jag öppnar nav-menyn?
+      z-index: 1;
     }
 
     .drizzle {
       color: $purple-color;
       top: rem(69);
       left: 50%; // kan man använda %?
+      font-weight: normal;
     }
 
     .chickpeas {
-      // denna vill inte stylas? är den i förhållande till något annat?
       color: $yellow-color;
-      bottom: rem(-15);
-      left: 40%; // kan man använda %? just med left blir stylingen knasig, vad är det i förhållande till?
-      // just nu fungerar inte stylingen på tablet och desktop...
+      top: rem(130);
+      left: calc(50% - 64px); 
+      font-weight: normal;
     }
   }
 
