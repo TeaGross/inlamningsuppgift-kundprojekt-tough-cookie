@@ -12,7 +12,7 @@ $font-main: 'Jockey one';
 
 $font-text: 'Roboto condensed';
 
-$font-sign: 'Courier prime';
+$font-label: 'Courier prime';
 
 
 
@@ -128,7 +128,7 @@ header {
     height: 25vh;
     font-size: rem(100);
 
-    div{
+    div {
       position: relative;
     }
 
@@ -175,11 +175,11 @@ header {
       align-items: center;
     }
 
-    img{
+    img {
       height: rem(25);
       margin-left: rem(8);
     }
-    
+
   }
 
   .text1 {
@@ -202,6 +202,67 @@ header {
     align-content: center;
   }
 
+  .menu {
+    .menuitem {
+      background-color: white;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-evenly;
+
+      h3 {
+        font-family: $font-main, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: rem(2);
+        font-size: rem(25);
+      }
+
+      p {
+        font-family: $font-text, sans-serif;
+      }
+
+      span {
+        font-family: $font-label, sans-serif;
+        text-transform: uppercase;
+      }
+
+      .new-label {
+        background-color: $purple-color;
+        transform: rotate(3deg);
+        display: inline-block;
+        width: rem(90);
+        display: flex;
+        justify-content: center;
+        span{
+          transform: rotate(-3deg);
+        }
+      }
+
+      .vegan-label {
+        background-color: $green-color;
+        display: inline-block;
+        transform: rotate(-3deg);
+        width: rem(90);
+        display: flex;
+        justify-content: center;
+        span{
+          transform: rotate(3deg);
+        }
+      }
+
+      .popular-label {
+        background-color: $yellow-color;
+        display: inline-block;
+        transform: rotate(1deg);
+        span{
+          transform: rotate(3deg);
+        }
+      }
+    }
+
+  }
+
   // .img{
   //   width: 50vw;
   //   height: 50px;
@@ -210,36 +271,6 @@ header {
   //   }
 }
 
-.menuitem {
-  background-color: white;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-evenly;
-
-  h3 {
-    font-family: $font-main, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: rem(2);
-    font-size: rem(25);
-  }
-
-  .new-label,
-  .vegan-label,
-  .popular-label {
-    font-family: $font-sign, sans-serif;
-  }
-
-  p {
-    font-family: $font-text, sans-serif;
-  }
-
-  span {
-    font-family: $font-main, sans-serif;
-  }
-
-}
 
 
 
@@ -249,30 +280,32 @@ header {
   form {
     display: flex;
     flex-direction: column;
+
     h4 {
       font-family: $font-main;
       text-transform: uppercase;
       font-size: rem(30);
     }
-    label{
+
+    label {
       font-family: $font-main, sans-serif;
       text-transform: uppercase;
     }
 
-    input{
+    input {
       border-radius: rem(10);
     }
   }
 
-  section{
-    li{
-      a{
+  section {
+    li {
+      a {
         font-family: $font-main;
       }
     }
   }
 
-  .button{
+  .button {
     font-family: $font-main;
     text-transform: uppercase;
     border-radius: rem(10);
@@ -280,9 +313,10 @@ header {
 
   .cookies {
     background-color: $purple-color;
-   p{
-    color: white;
-   }
+
+    p {
+      color: white;
+    }
   }
 }
 
