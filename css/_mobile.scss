@@ -18,6 +18,15 @@ header {
 .page1 {
     padding-top: 10vh; // är det rimligt att ha padding?
 
+    section{
+        .text1,
+        .text2{
+            p {
+                text-align: center;
+            }
+        }
+
+    }
 }
 
 .page2 {
