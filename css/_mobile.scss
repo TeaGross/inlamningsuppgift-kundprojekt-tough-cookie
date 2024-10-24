@@ -18,9 +18,10 @@ header {
 .page1 {
     padding-top: 10vh; // är det rimligt att ha padding?
 
-    section{
+    section {
+
         .text1,
-        .text2{
+        .text2 {
             p {
                 text-align: center;
             }
@@ -51,10 +52,22 @@ header {
 .page3 {
     position: relative;
 
-    // .cookies {
-    //     position: absolute;
-    //     bottom: 0;
-    //     right: 0;
-    //     left: 0;
-    // }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .form-group{
+            input{
+                width: rem(150);
+              }
+
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

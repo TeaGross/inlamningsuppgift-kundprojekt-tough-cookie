@@ -115,6 +115,12 @@ header {
   }
 }
 
+.page1,
+.page2,
+.page3{
+  min-height: 100vh;
+}
+
 .page1 {
   background-color: black;
   // border-left: rem(16) solid $yellow-color;
@@ -264,52 +270,46 @@ header {
 
   }
 
-  // .img{
-  //   width: 50vw;
-  //   height: 50px;
-  //   img{
-  //     width: 75%;
-  //   }
 }
-
-
-
 
 .page3 {
   background-color: $green-color;
-
+  font-family: $font-main;
   form {
-    display: flex;
-    flex-direction: column;
-
+    .form-group{
+      display: flex;
+      align-items: center;
+      margin-bottom: 1em;
+    }
+    
     h4 {
-      font-family: $font-main;
       text-transform: uppercase;
       font-size: rem(30);
     }
 
     label {
-      font-family: $font-main, sans-serif;
       text-transform: uppercase;
+      width: rem(70);
+      margin-right: 1em;
     }
+    
 
-    input {
+    .cancel{
+      background-color: $purple-color;
+    }
+    .request{
+      background-color: $yellow-color;
+    }
+  
+  }
+input {
       border-radius: rem(10);
+      border: none;
     }
-  }
 
-  section {
-    li {
-      a {
-        font-family: $font-main;
-      }
-    }
-  }
 
-  .button {
-    font-family: $font-main;
-    text-transform: uppercase;
-    border-radius: rem(10);
+  .contact-info{
+    color: #27b9e8;
   }
 
   .cookies {
@@ -317,6 +317,14 @@ header {
 
     p {
       color: white;
+      font-family: $font-text;
+    }
+
+    .decline{
+      background-color: $yellow-color;
+    }
+    .accept{
+      background-color: $green-color;
     }
   }
 }

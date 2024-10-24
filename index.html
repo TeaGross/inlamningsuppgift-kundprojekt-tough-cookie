@@ -86,7 +86,7 @@
       <section class="menu">
         <article class="menuitem">
           <h3>Halloumi Moklieh</h3>
-          <div  class="new-label">
+          <div class="new-label">
             <span>New!</span>
           </div>
           <p>Deep-fried halloumi</p>
@@ -114,7 +114,7 @@
         <article class="menuitem">
           <h3>Moutabbal batinzian</h3>
           <div class="vegan-label">
-            <span >Vegan</span>
+            <span>Vegan</span>
           </div>
           <p>Smoked chopped aubergine, sesame paste, garlic and lemon</p>
           <span>175kr</span>
@@ -123,7 +123,7 @@
         <article class="menuitem">
           <h3>Ardishoki</h3>
           <div class="popular-label">
-            <span >Popular</span>
+            <span>Popular</span>
           </div>
           <p>Artichoke with lemon and garlic marinade</p>
           <span>99kr</span>
@@ -140,40 +140,42 @@
     <div class="page3">
       <form>
         <h4> Book your table</h4>
-        <label>
-          Name
-          <input type="text" required>
-        </label>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" required>
+        </div>
 
-        <label>
-          Email
-          <input type="email" required>
-        </label>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" required>
+        </div>
 
-        <label>
-          Phone
-          <input type="tel" required>
-        </label>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input id="date" type="date" required>
+        </div>
 
-        <label>
-          Date
-          <input type="date" required>
-        </label>
+        <div class="form-group">
+          <label for="party">Party size</label>
+          <input id="party" type="text" required>
+        </div>
 
-        <label>
-          Party size
-          <input type="text" required>
-        </label>
+        <div class="form-group">
+          <label for="allergies">Allergies</label>
+          <input id="allergies" type="text" required>
+        </div>
 
-        <label>
-          Allergies
-          <input type="text" required>
-        </label>
-        <input class="button" type="reset" value="Cancel">
-        <input class="button" type="submit" value="Request">
+        <div class="button-group">
+          <input class="cancel" type="reset" value="Cancel">
+          <input class="request" type="submit" value="Request">
+        </div>
       </form>
 
-      <section>
+      <section class="contact">
         <img src="" alt="restaurant">
         <ul class="contact-info">
           <li><a href="tel:+4681234567">+4681234567</a></li>
@@ -185,8 +187,8 @@
 
       <section class="cookies">
         <p>You should accept cookies.</p>
-        <input class="button" type="button" value="Decline">
-        <input class="button" type="submit" value="Accept">
+        <input class="decline" type="button" value="Decline">
+        <input class="accept" type="submit" value="Accept">
       </section>
 
     </div>
