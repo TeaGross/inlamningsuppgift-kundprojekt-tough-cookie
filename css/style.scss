@@ -205,8 +205,6 @@ header {
   .menu {
     .menuitem {
       background-color: white;
-      border-top: 2px solid black;
-      border-bottom: 2px solid black;
       // display: flex;
       // flex-direction: column;
       // justify-content: space-evenly;
@@ -223,7 +221,7 @@ header {
       }
 
       span {
-        font-family: $font-label, sans-serif;
+        font-family: $font-main, sans-serif;
         text-transform: uppercase;
       }
 
@@ -236,6 +234,7 @@ header {
         justify-content: center;
         span{
           transform: rotate(-3deg);
+          font-family: $font-label;
         }
       }
 
@@ -248,6 +247,7 @@ header {
         justify-content: center;
         span{
           transform: rotate(3deg);
+          font-family: $font-label;
         }
       }
 
@@ -257,6 +257,7 @@ header {
         transform: rotate(1deg);
         span{
           transform: rotate(3deg);
+          font-family: $font-label;
         }
       }
     }
