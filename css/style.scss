@@ -24,6 +24,7 @@ header {
     text-transform: uppercase;
     font-family: $font-main, sans-serif;
     letter-spacing: rem(5);
+    font-size: 3rem;
 
   }
 
@@ -166,6 +167,19 @@ header {
       bottom: -0.3em;
       margin: 0;
       font-size: 0.45em;
+    }
+  }
+  
+  .image{
+    background-image: url('../assets/photos/lettuce.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    .arrow{
+      transform: rotate(90deg);
+      position: absolute;
+      bottom: rem(10);
+      left: 0;
     }
   }
 
