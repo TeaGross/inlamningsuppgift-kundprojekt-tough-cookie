@@ -117,7 +117,7 @@ header {
 
 .page1,
 .page2,
-.page3{
+.page3 {
   min-height: 100vh;
 }
 
@@ -139,7 +139,6 @@ header {
     }
 
     h2 {
-      font-family: $font-main, sans-serif;
       text-transform: uppercase;
       font-weight: normal;
     }
@@ -238,7 +237,8 @@ header {
         width: rem(90);
         display: flex;
         justify-content: center;
-        span{
+
+        span {
           transform: rotate(-3deg);
           font-family: $font-label;
         }
@@ -251,7 +251,8 @@ header {
         width: rem(90);
         display: flex;
         justify-content: center;
-        span{
+
+        span {
           transform: rotate(3deg);
           font-family: $font-label;
         }
@@ -261,7 +262,8 @@ header {
         background-color: $yellow-color;
         display: inline-block;
         transform: rotate(1deg);
-        span{
+
+        span {
           transform: rotate(3deg);
           font-family: $font-label;
         }
@@ -275,13 +277,16 @@ header {
 .page3 {
   background-color: $green-color;
   font-family: $font-main;
+
   form {
-    .form-group{
+    height: 50vh; // mobil version
+
+    .form-group {
       display: flex;
       align-items: center;
       margin-bottom: 1em;
     }
-    
+
     h4 {
       text-transform: uppercase;
       font-size: rem(30);
@@ -292,24 +297,76 @@ header {
       width: rem(70);
       margin-right: 1em;
     }
-    
 
-    .cancel{
+    .cancel,
+    .request {
+      width: rem(120); // styling för mobil?
+    }
+
+    .cancel {
       background-color: $purple-color;
     }
-    .request{
+
+    .request {
       background-color: $yellow-color;
     }
-  
+
   }
-input {
-      border-radius: rem(10);
-      border: none;
+
+  input {
+    border-radius: rem(7);
+    border: none;
+  }
+
+  .contact {
+    height: 50vh; //mobil version 
+    // max-width: 300px;
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    div {
+      width: 300px;
+      height: 300px;
+      position: relative;
     }
 
+    .image-background {
+      background-image: url('../assets/photos/table.jpg');
+      background-size: cover;
+      background-position: center;
+      // mobil styling nedan
+      height: 100%;
+      width: 100%;
+      filter: blur(1.5px);
+      
+    }
+    .contact-info {
+      text-shadow: -1.5px -1.5px 0 black;
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
-  .contact-info{
-    color: #27b9e8;
+      li {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 1.4rem;
+        padding: 1rem; //mellan raderna
+        a {
+          color: #2bbae9;
+          text-decoration: none;
+          display: flex; // skjuter ner ikonerna till länkens rad
+          align-items: center;
+          svg{
+            filter: drop-shadow(-1px -1px 0 black);
+            margin-right: 10px;          }
+        }
+      }
+    }
   }
 
   .cookies {
@@ -320,10 +377,16 @@ input {
       font-family: $font-text;
     }
 
-    .decline{
+    .decline,
+    .accept {
+      width: rem(120); //styling för mobil?
+    }
+
+    .decline {
       background-color: $yellow-color;
     }
-    .accept{
+
+    .accept {
       background-color: $green-color;
     }
   }
