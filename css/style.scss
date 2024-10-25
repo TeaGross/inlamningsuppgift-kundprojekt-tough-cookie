@@ -14,8 +14,6 @@ $font-text: 'Roboto condensed';
 
 $font-label: 'Courier prime';
 
-
-
 header {
   background-color: black;
   color: white;
@@ -116,6 +114,12 @@ header {
   }
 }
 
+ img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
 // .page1,
 // .page2,
 // .page3 {
@@ -180,6 +184,7 @@ header {
       position: absolute;
       bottom: rem(10);
       left: 0;
+      width: 50px;
     }
   }
 
@@ -197,6 +202,7 @@ header {
 
     img {
       height: rem(20);
+      width: rem(25);
       margin-left: rem(8);
     }
 
@@ -215,12 +221,6 @@ header {
 
 .page2 {
   background-color: $yellow-color;
-
-  .top {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
 
   .menu {
     .menuitem {
