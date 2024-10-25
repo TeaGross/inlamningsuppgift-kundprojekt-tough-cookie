@@ -133,6 +133,7 @@ header {
     justify-content: center;
     height: 25vh;
     font-size: rem(100);
+    font-family: $font-main, sans-serif;
 
     div {
       position: relative;
@@ -152,7 +153,7 @@ header {
     .drizzle {
       color: $purple-color;
       position: absolute;
-      top: -0.4em;
+      top: -0.35em;
       right: 0.1em;
       font-size: 0.38em;
       margin: 0;
