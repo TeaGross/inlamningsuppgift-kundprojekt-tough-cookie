@@ -15,20 +15,29 @@ header {
 .page1 {
     padding-top: 10vh; // är det rimligt att ha padding?
 
-    section {
-        height: 50%;
-
         .text1,
         .text2 {
             p {
                 text-align: center;
             }
         }
-
+    
+    .top {
+        .text1 {
+            margin: 10px;
+        }
     }
-    .image{
-        height: 25vh;
-        width: auto;
+
+    .bottom {
+        .image {
+            height: 25vh;
+            width: auto;
+            margin: 10px;
+        }
+        .text2{
+            margin: 10px;
+        }
+
     }
 }
 
@@ -52,15 +61,16 @@ header {
 
 
 .page3 {
-    form{
+    form {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: rem(365);
-        .form-group{
-            input{
+
+        .form-group {
+            input {
                 width: rem(150);
-              }
+            }
 
         }
     }
@@ -69,7 +79,7 @@ header {
         height: rem(350); //mobil version
     }
 
-    .cookies{
+    .cookies {
         // behöver få ner cookies längst ner
     }
 }

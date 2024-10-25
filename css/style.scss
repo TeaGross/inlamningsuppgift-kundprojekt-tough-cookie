@@ -24,7 +24,7 @@ header {
     text-transform: uppercase;
     font-family: $font-main, sans-serif;
     letter-spacing: rem(5);
-    font-size: 3rem;
+    font-size: 2.5rem;
 
   }
 
@@ -116,11 +116,11 @@ header {
   }
 }
 
-.page1,
-.page2,
-.page3 {
-  min-height: 100vh;
-}
+// .page1,
+// .page2,
+// .page3 {
+//   min-height: 100vh;
+// } kanske bara ha på desktop?
 
 .page1 {
   background-color: black;
@@ -132,7 +132,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 25vh;
+    height: 25vh; // onödig?
     font-size: rem(100);
     font-family: $font-main, sans-serif;
 
@@ -196,7 +196,7 @@ header {
     }
 
     img {
-      height: rem(25);
+      height: rem(20);
       margin-left: rem(8);
     }
 
