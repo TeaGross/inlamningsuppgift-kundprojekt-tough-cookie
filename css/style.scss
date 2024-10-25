@@ -279,28 +279,24 @@ header {
   font-family: $font-main;
 
   form {
-    height: 50vh; // mobil version
+    text-transform: uppercase;
 
     .form-group {
       display: flex;
       align-items: center;
       margin-bottom: 1em;
+      input{
+        color: transparent;
+      }
     }
 
     h4 {
-      text-transform: uppercase;
       font-size: rem(30);
     }
 
     label {
-      text-transform: uppercase;
       width: rem(70);
       margin-right: 1em;
-    }
-
-    .cancel,
-    .request {
-      width: rem(120); // styling för mobil?
     }
 
     .cancel {
@@ -316,10 +312,12 @@ header {
   input {
     border-radius: rem(7);
     border: none;
+    text-transform: uppercase;
+    width: rem(120); // styling för mobil?
+
   }
 
   .contact {
-    height: 50vh; //mobil version 
     // max-width: 300px;
     // position: relative;
     display: flex;
@@ -341,8 +339,9 @@ header {
       height: 100%;
       width: 100%;
       filter: blur(1.7px);
-      
+
     }
+
     .contact-info {
       text-shadow: -1.5px -1.5px 0 black;
       padding: 0;
@@ -356,14 +355,17 @@ header {
         justify-content: flex-start;
         font-size: 1.4rem;
         padding: 1rem; //mellan raderna
+
         a {
           color: #2bbae9;
           text-decoration: none;
           display: flex; // skjuter ner ikonerna till länkens rad
           align-items: center;
-          svg{
+
+          svg {
             filter: drop-shadow(-1px -1px 0 black);
-            margin-right: 10px;          }
+            margin-right: 10px;
+          }
         }
       }
     }
@@ -375,11 +377,6 @@ header {
     p {
       color: white;
       font-family: $font-text;
-    }
-
-    .decline,
-    .accept {
-      width: rem(120); //styling för mobil?
     }
 
     .decline {

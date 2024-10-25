@@ -50,24 +50,25 @@ header {
 
 
 .page3 {
-    position: relative;
-
     form{
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 40vh;
         .form-group{
             input{
                 width: rem(150);
               }
-
         }
     }
 
     .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        height: 50vh;
+    }
+
+    .cookies{
+        height: 10vh;
+        font-size: 1.2rem;
     }
 
 }
