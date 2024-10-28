@@ -41,6 +41,12 @@ header {
     }
 }
 
+.page1,
+.page2{
+    border-left: 16px solid $yellow-color;
+    border-right: 16px solid $yellow-color;
+}
+
 .page1 {
     grid-column: span 11;
 

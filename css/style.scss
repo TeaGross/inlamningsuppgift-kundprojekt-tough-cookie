@@ -1,3 +1,5 @@
+@import 'vendor/normalize';
+
 @function rem($size) {
   @return calc($size / 16) * 1rem;
 }
@@ -72,7 +74,7 @@ header {
       transform: rotate(45deg);
     }
 
-    &+.mainMenu button span:nth-child(3) {
+    &+.mainMenu button span:nth-child(3) { // oklart varför detta ligger i huvudfilen-kommentar från jenni?
       transform: rotate(-45deg);
     }
 
@@ -408,7 +410,6 @@ header {
 }
 
 
-@import 'vendor/normalize';
 
 @import 'mobile';
 
