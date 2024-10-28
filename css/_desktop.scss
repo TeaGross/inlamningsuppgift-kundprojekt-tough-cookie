@@ -11,7 +11,7 @@ header {
     height: 100%;
     align-items: center;
     width: 100%; 
-    grid-row: span 3;
+    grid-row: span 3; // span över alla tre sidor
     position: static;
 
     nav{
@@ -19,12 +19,18 @@ header {
     }
    
     h1 {
-        writing-mode: vertical-lr;
-        text-orientation: upright;
+        // writing-mode: vertical-lr;
+        // text-orientation: upright;
         position: fixed;
-        left: 1vw;
-        top: 30vh;
+        top: 10vh;
+        font-size: rem(42);
 
+        max-width: 30px;
+        word-break: break-all;
+
+        .desktop-only{
+            display: block; // för att mellanrummet ska synas
+          }
 
     }
 
@@ -44,7 +50,7 @@ header {
 .page1,
 .page2{
     border-left: 16px solid $yellow-color;
-    border-right: 16px solid $yellow-color;
+    border-right: 16px solid $yellow-color; // lagt till
 }
 
 .page1 {

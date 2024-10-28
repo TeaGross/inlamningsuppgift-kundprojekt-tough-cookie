@@ -10,6 +10,13 @@ header {
     nav {
         top: 10vh;
     }
+
+    h1{
+        font-size: 2.3em;
+        .desktop-only{
+            display: none; // för att mellanrummet inte ska bli för stort
+          }
+    }
 }
 
 .page1 {
