@@ -63,10 +63,17 @@ header {
 }
 
 .page1 {
+    padding: 0;
+
     section {
         display: grid;
         gap: rem(16);
         grid-template-columns: repeat(11, 1fr);
+    }
+
+    .text1,
+    .text2 {
+        text-align: left;
     }
 
     .top {
@@ -74,11 +81,18 @@ header {
 
         .page-title {
             grid-column: span 4; // för grid
+            height: 100%;
 
         }
 
         .text1 {
             grid-column: span 7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-size: 37px;
+            padding-right: 10px;
         }
     }
 
@@ -87,10 +101,32 @@ header {
 
         .image {
             grid-column: span 5;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            &:hover {
+                .arrow {
+                    bottom: 10px;
+                }
+            }
+
+            .arrow {
+                bottom: 20px;
+                left: 20px;
+                transition: bottom 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
         }
 
         .text2 {
             grid-column: span 6;
+            font-size: rem(35);
+            margin: 0;
+            span{
+            font-size: rem(35);
+            }
         }
     }
 
@@ -110,9 +146,10 @@ header {
 
         .img1,
         .img2,
-        .img3{
+        .img3 {
             height: 300px;
         }
+
         .img1 {
             grid-column: span 3;
             border: 0;
@@ -128,12 +165,14 @@ header {
     }
 
     .menu {
+
         // height: 60vh;
         .menuitem {
             grid-column: span 11;
             display: grid;
             gap: rem(16);
             grid-template-columns: repeat(11, 1fr);
+
             h3 {
                 grid-column: span 4;
                 position: relative;
