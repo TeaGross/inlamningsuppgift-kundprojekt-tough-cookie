@@ -2,20 +2,19 @@
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: rem(16);
 }
 
 
 header {
-    flex-direction: column;
     height: 100%;
-    align-items: center;
+    text-align: center;
     width: 100%; 
     grid-row: span 3; // span över alla tre sidor
     position: static;
 
     nav{
         left: calc(100vw/12 - rem(16)); // gör att naven lägger sig BREDVID headern. Calc=uträkning 100vw är hela skärmen/ 12 grid-colums och minus ett gap(16px).
+        top: 0;
     }
    
     h1 {
@@ -53,11 +52,16 @@ header {
     border-right: 16px solid $yellow-color; // lagt till
 }
 
-.page1 {
+.page3{
+    border-left: 16px solid white;
+}
+
+.page1,
+.page2,
+.page3 {
     grid-column: span 11;
 
-    .top,
-    .bottom {
+   section {
         display: grid;
         gap: rem(16);
         grid-template-columns: repeat(11, 1fr);
@@ -71,17 +75,17 @@ header {
       
     }
 
-    .text {
+    .text1 {
         grid-column: span 7;
     }
 }
 
 .bottom {
-    image {
+    .image {
         grid-column: span 5;
     }
 
-    .text {
+    .text2 {
         grid-column: span 6;
     }
 }

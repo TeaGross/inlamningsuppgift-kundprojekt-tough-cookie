@@ -30,6 +30,14 @@ header {
         }
     
     .top {
+        .page-title{
+            display: flex;
+            // flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 25vh; // onödig?
+            font-size: rem(100);
+        }
         .text1 {
             margin: 10px;
         }

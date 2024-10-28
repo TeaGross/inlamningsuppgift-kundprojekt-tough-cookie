@@ -121,25 +121,19 @@ header {
     display: block;
   }
 
-// .page1,
-// .page2,
-// .page3 {
-//   min-height: 100vh;
-// } kanske bara ha på desktop?
 
+.page1,
+.page2,
+.page3{
+    min-height: 100vh;
+}
 .page1 {
   background-color: black;
   // border-left: rem(16) solid $yellow-color;
   // border-right: rem(16) solid $yellow-color; bättre att lägga dessa i varje version! endast top i moiblversion
+  font-family: $font-main, sans-serif;
 
   .page-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 25vh; // onödig?
-    font-size: rem(100);
-    font-family: $font-main, sans-serif;
 
     div {
       position: relative;
@@ -190,10 +184,7 @@ header {
   }
 
   article {
-    font-family: $font-main, sans-serif;
-
     span {
-      font-family: $font-main;
       text-transform: uppercase;
       color: black;
       font-size: rem(25);
