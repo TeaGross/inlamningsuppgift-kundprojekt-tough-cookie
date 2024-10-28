@@ -213,6 +213,12 @@ header {
 
 .page2 {
   background-color: $yellow-color;
+  .image-container{
+    img {
+      object-fit: cover;
+      height: 100%;
+  }
+  }
 
   .menu {
     .menuitem {

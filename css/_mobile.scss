@@ -60,17 +60,11 @@ header {
     border: 10px solid $yellow-color;
 
     .image-container {
-        object-fit: cover;
-        height: 100%;
-
+       
         .img1 {
             border-top: 10px solid $yellow-color;
             height: 200px;
 
-            img3 {
-                // object-fit: cover;
-                // height: 100%;
-            }
         }
 
         .img2,

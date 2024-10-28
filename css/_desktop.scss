@@ -106,10 +106,16 @@ header {
     }
 
     .image-container {
-        height: 40vh; // varför fuckar detta upp? om jag tar bort förstörs hela page 2
+        // height: 40vh; // varför fuckar detta upp? om jag tar bort förstörs hela page 2
 
+        .img1,
+        .img2,
+        .img3{
+            height: 300px;
+        }
         .img1 {
             grid-column: span 3;
+            border: 0;
         }
 
         .img2,
@@ -118,12 +124,6 @@ header {
             display: inline;
         }
 
-        .img3 {
-            img {
-                width: 300px;
-                height: auto;
-            }
-        }
 
     }
 
@@ -162,9 +162,11 @@ header {
                 grid-column: 5 / span 6;
             }
 
-            span {
+            .price {
                 grid-column: span 1;
+                font-size: rem(25);
             }
+
         }
     }
 }
