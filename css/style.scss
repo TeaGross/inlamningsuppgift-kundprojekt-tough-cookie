@@ -31,7 +31,7 @@ header {
 
   }
 
-  .mainMenu button {
+  .main-menu button {
     background: transparent;
     border: 0;
     position: fixed;
@@ -58,20 +58,20 @@ header {
   }
 
   input:checked {
-    &+.mainMenu button span {
+    &+.main-menu button span {
       position: absolute;
       transition: all 0.3s ease-in-out;
     }
 
-    &+.mainMenu button span:nth-child(2) {
+    &+.main-menu button span:nth-child(2) {
       opacity: 0;
     }
 
-    &+.mainMenu button span:nth-child(1) {
+    &+.main-menu button span:nth-child(1) {
       transform: rotate(45deg);
     }
 
-    &+.mainMenu button span:nth-child(3) {
+    &+.main-menu button span:nth-child(3) {
       // oklart varför detta ligger i huvudfilen-kommentar från jenni?
       transform: rotate(-45deg);
     }
@@ -111,7 +111,7 @@ header {
     }
   }
 
-  input:checked+.mainMenu nav {
+  input:checked+.main-menu nav {
     display: block;
     opacity: 1;
     visibility: visible;
