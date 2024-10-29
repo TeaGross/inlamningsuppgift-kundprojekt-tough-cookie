@@ -128,8 +128,6 @@ img {
 
 .page1 {
   background-color: black;
-  // border-left: rem(16) solid $yellow-color;
-  // border-right: rem(16) solid $yellow-color; bättre att lägga dessa i varje version! endast top i moiblversion
   font-family: $font-main, sans-serif;
 
   .page-title {
@@ -205,6 +203,9 @@ img {
     color: #895ece; // Annan färg på denna text eftersom kontrasten blir för låg annars.
     background-color: white;
     border-left: rem(16) solid $yellow-color; 
+    a{
+      text-decoration: none;
+    }
   }
 }
 
