@@ -15,14 +15,20 @@ header {
     nav {
         left: calc(100%/12 - rem(16)); // gör att naven lägger sig BREDVID headern. Calc=uträkning 100vw är hela skärmen/ 12 grid-colums och minus ett gap(16px).
         top: 0;
-        ul{
-            li{
-                    transition: transform 0.5s ;
-                    &:hover{
-                            transform: translateX(10px);
-                    }
+
+        ul {
+            li {
+                margin-right: 350px;
+                transition: transform 0.5s;
+
+                &:hover {
+                    transform: translateX(20px);
+                }
+                a{
+                    font-size: 50px;
+                }
             }
-        }           
+        }
     }
 
     h1 {
@@ -77,7 +83,8 @@ header {
 .page1 {
     padding: 0;
 
-    section {
+    .top,
+    .bottom {
         display: grid;
         gap: rem(16);
         grid-template-columns: repeat(11, 1fr);
@@ -138,13 +145,13 @@ header {
             margin: 0;
             padding: 0;
 
-            a{
+            a {
                 :hover {
-                color: rgb(33, 33, 249);
-        
+                    color: rgb(33, 33, 249);
+
                 }
             }
-            
+
             span {
                 font-size: rem(40);
             }
