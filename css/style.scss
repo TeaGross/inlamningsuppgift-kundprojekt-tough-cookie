@@ -103,6 +103,10 @@ header {
         font-family: $font-main, sans-serif;
         font-size: rem(35);
         text-transform: uppercase;
+        a{
+          text-decoration: none;
+          color: white;
+        }
       }
     }
   }

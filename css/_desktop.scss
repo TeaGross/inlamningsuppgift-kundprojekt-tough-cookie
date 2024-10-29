@@ -13,8 +13,16 @@ header {
 
 
     nav {
-        left: calc(100vw/12 - rem(16)); // gör att naven lägger sig BREDVID headern. Calc=uträkning 100vw är hela skärmen/ 12 grid-colums och minus ett gap(16px).
+        left: calc(100%/12 - rem(16)); // gör att naven lägger sig BREDVID headern. Calc=uträkning 100vw är hela skärmen/ 12 grid-colums och minus ett gap(16px).
         top: 0;
+        ul{
+            li{
+                    transition: transform 0.5s ;
+                    &:hover{
+                            transform: translateX(10px);
+                    }
+            }
+        }           
     }
 
     h1 {
@@ -44,8 +52,10 @@ header {
     }
 
     .checkbox {
-        left: rem(40); // hamburgermenyn
-        top: rem(20);
+        left: rem(37); // hamburgermenyn
+        top: rem(15);
+        width: 50px;
+        height: 50px;
 
     }
 }
@@ -131,9 +141,7 @@ header {
             a{
                 :hover {
                 color: rgb(33, 33, 249);
-                img{
-                    
-                }
+        
                 }
             }
             
