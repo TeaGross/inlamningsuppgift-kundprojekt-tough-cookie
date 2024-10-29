@@ -1,3 +1,4 @@
+
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -11,14 +12,13 @@ header {
     grid-row: span 3; // span över alla tre sidor
     position: static;
 
+
     nav {
         left: calc(100vw/12 - rem(16)); // gör att naven lägger sig BREDVID headern. Calc=uträkning 100vw är hela skärmen/ 12 grid-colums och minus ett gap(16px).
         top: 0;
     }
 
     h1 {
-        // writing-mode: vertical-lr;
-        // text-orientation: upright;
         position: fixed;
         top: 10vh;
         font-size: rem(42);
@@ -32,14 +32,19 @@ header {
 
     }
 
-    button {
-        left: rem(20); // hamburgermenyn
+    .mainMenu button {
+        left: rem(30); // hamburgermenyn
         top: rem(20);
+        span{
+            width: 50px;
+            height: 7px;
+        }
+       
 
     }
 
     .checkbox {
-        left: rem(20); // hamburgermenyn
+        left: rem(40); // hamburgermenyn
         top: rem(20);
 
     }
@@ -51,9 +56,6 @@ header {
     border-right: 16px solid $yellow-color; // lagt till
 }
 
-.page3 {
-    border-left: 16px solid white;
-}
 
 .page1,
 .page2,
@@ -114,7 +116,7 @@ header {
             }
 
             .arrow {
-                bottom: 20px;
+                bottom: 25px;
                 left: 20px;
                 transition: bottom 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
             }
@@ -123,9 +125,16 @@ header {
         .text2 {
             grid-column: span 6;
             font-size: rem(35);
-            margin: 0;
-            span{
-            font-size: rem(35);
+            margin: 0; 
+            padding: 0;
+
+            span {
+                font-size: rem(40);
+            }
+
+            img {
+                height: rem(35);
+                width: rem(45);
             }
         }
     }
@@ -172,6 +181,8 @@ header {
             display: grid;
             gap: rem(16);
             grid-template-columns: repeat(11, 1fr);
+            border-left: 0;
+            border-right: 0;
 
             h3 {
                 grid-column: span 4;
@@ -208,4 +219,65 @@ header {
 
         }
     }
+}
+
+.page3 {
+    border-left: 16px solid white;
+    display: grid;
+    gap: rem(16);
+    grid-template-columns: repeat(11, 1fr);
+    form {
+        grid-column: span 5;
+        margin-top: rem(80);
+        display: flex;
+        align-items: flex-start;
+        margin-left: rem(20);
+        h4{
+            font-size: rem(47);
+            letter-spacing: rem(5);
+            margin-bottom: rem(20);
+        }
+        .form-group{
+            label{
+                font-size: rem(30);
+                width: rem(150);
+            }
+            input{
+                width: rem(320);
+                height: rem(25);
+            }
+
+        }
+        .cancel,
+        .request{
+            width: rem(225);
+            font-size: rem(25);
+            margin-left: rem(5);
+        }
+    }
+
+    .contact {
+        grid-column: span 6;
+        height: 90%;
+        div{
+            width: rem(480);
+            height: rem(480);
+        }
+        a{
+            font-size: rem(40);
+        }
+    }
+
+}
+.cookies {
+    padding-left: 130px;
+    p{
+        font-size: rem(20);
+    }
+    input{
+        width: rem(220);
+        margin-left: rem(10);
+        font-size: rem(25);
+    }
+
 }

@@ -7,6 +7,18 @@ header {
     position: fixed;
     z-index: 1;
 
+    .mainMenu button {
+        width: rem(35);
+        height: rem(35);
+        right: rem(40);
+        top: rem(20);
+
+        span {
+            width: rem(35);
+            height: rem(5);
+        }
+    }
+
     nav {
         top: 10vh;
     }
@@ -25,7 +37,7 @@ header {
 
     .text1,
     .text2 {
-            text-align: center;
+        text-align: center;
     }
 
     .top {
@@ -54,6 +66,11 @@ header {
                 left: 0;
                 width: 50px;
             }
+        }
+
+        .text2 {
+            padding-top: 10px;
+
         }
 
     }
@@ -109,10 +126,21 @@ header {
     }
 
     .contact {
-        height: rem(350); //mobil version
+        height: rem(450);
     }
 
-    .cookies {
-        // behöver få ner cookies längst ner
+}
+
+.cookies {
+    flex-wrap: wrap;
+    padding: 5px;
+
+    p {
+        font-size: 17px;
+    }
+
+    input {
+        width: rem(150); // styling för mobil?
+        font-size: 20px;
     }
 }

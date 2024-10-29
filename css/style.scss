@@ -16,6 +16,10 @@ $font-text: 'Roboto condensed';
 
 $font-label: 'Courier prime';
 
+body {
+  position: relative;
+}
+
 header {
   background-color: black;
   color: white;
@@ -28,21 +32,15 @@ header {
   }
 
   .mainMenu button {
-    width: rem(35);
-    height: rem(35);
     background: transparent;
     border: 0;
     position: fixed;
-    right: rem(20);
-    top: rem(20);
     pointer-events: none;
     margin: 0;
     z-index: 2;
 
     span {
       display: block;
-      width: rem(35);
-      height: rem(5);
       background-color: $yellow-color;
       border-radius: rem(6);
       margin-bottom: rem(4);
@@ -73,7 +71,8 @@ header {
       transform: rotate(45deg);
     }
 
-    &+.mainMenu button span:nth-child(3) { // oklart varför detta ligger i huvudfilen-kommentar från jenni?
+    &+.mainMenu button span:nth-child(3) {
+      // oklart varför detta ligger i huvudfilen-kommentar från jenni?
       transform: rotate(-45deg);
     }
 
@@ -115,18 +114,18 @@ header {
   }
 }
 
- img{
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-
-.page1,
-.page2,
-.page3{
-    min-height: 100vh;
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
+
+
+.page2,
+.page3 {
+  min-height: 100vh;
+}
+
 .page1 {
   background-color: black;
   // border-left: rem(16) solid $yellow-color;
@@ -162,19 +161,20 @@ header {
     .chickpeas {
       color: $yellow-color;
       position: absolute;
-      left: 0.3em;
-      bottom: -0.3em;
+      left: 0.1em; // har ej placerat exakt enligt designen för att förbättra läsmöjlighet för användaren.
+      bottom: -0.50em;
       margin: 0;
       font-size: 0.45em;
     }
   }
-  
-  .image{
+
+  .image {
     background-image: url('../assets/photos/lettuce.jpg');
     background-size: cover;
     background-position: center center;
     position: relative;
-    .arrow{
+
+    .arrow {
       transform: rotate(90deg);
       position: absolute;
     }
@@ -190,7 +190,7 @@ header {
     }
 
     img {
-      height: rem(20);
+      height: rem(25);
       width: rem(25);
       margin-left: rem(8);
     }
@@ -202,19 +202,20 @@ header {
   }
 
   .text2 {
-    color: $purple-color;
+    color: #895ece; // Annan färg på denna text eftersom kontrasten blir för låg annars.
     background-color: white;
-    border-left: rem(16) solid $yellow-color; // funkar inte!
+    border-left: rem(16) solid $yellow-color; 
   }
 }
 
 .page2 {
   background-color: $yellow-color;
-  .image-container{
+
+  .image-container {
     img {
       object-fit: cover;
       height: 100%;
-  }
+    }
   }
 
   .menu {
@@ -297,6 +298,7 @@ header {
 
     h4 {
       font-size: rem(30);
+      text-transform: uppercase;
     }
 
     label {
@@ -317,16 +319,14 @@ header {
   }
 
   input {
-    border-radius: rem(7);
+    border-radius: rem(9);
     border: none;
     width: rem(120); // styling för mobil?
 
   }
 
   .cancel,
-  .request,
-  .decline,
-  .accept{
+  .request {
     text-transform: uppercase;
   }
 
@@ -384,21 +384,42 @@ header {
     }
   }
 
-  .cookies {
-    background-color: $purple-color;
+}
 
-    p {
-      color: white;
-      font-family: $font-text;
-    }
+.cookies {
+  background-color: $purple-color;
+  font-family: $font-main, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 20px;
 
-    .decline {
-      background-color: $yellow-color;
-    }
 
-    .accept {
-      background-color: $green-color;
-    }
+  p {
+    color: white;
+    font-family: $font-text;
+  }
+
+  input {
+    border-radius: rem(7);
+    border: none;
+    // width: rem(120); // styling för mobil?
+    text-transform: uppercase;
+    font-family: $font-main, sans-serif;
+
+  }
+
+  .decline {
+    background-color: $yellow-color;
+  }
+
+  .accept {
+    background-color: $green-color;
   }
 }
 
