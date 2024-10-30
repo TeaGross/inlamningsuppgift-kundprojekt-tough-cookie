@@ -125,11 +125,6 @@ img {
 }
 
 
-// .page2,
-// .page3 {
-//   min-height: 100vh;
-// }
-
 .page1 {
   background-color: black;
   font-family: $font-main, sans-serif;
@@ -249,7 +244,7 @@ img {
 
         span {
           transform: rotate(-3deg);
-          font-family: $font-label;
+          font-family: $font-label, sans-serif;
         }
       }
 
@@ -263,7 +258,7 @@ img {
 
         span {
           transform: rotate(3deg);
-          font-family: $font-label;
+          font-family: $font-label, sans-serif;
         }
       }
 
@@ -274,7 +269,7 @@ img {
 
         span {
           transform: rotate(3deg);
-          font-family: $font-label;
+          font-family: $font-label, sans-serif;
         }
       }
     }
@@ -285,7 +280,7 @@ img {
 
 .page3 {
   background-color: $green-color;
-  font-family: $font-main;
+  font-family: $font-main, sans-serif;
 
   form {
     .form-group {
@@ -388,7 +383,7 @@ img {
 
   p {
     color: white;
-    font-family: $font-text;
+    font-family: $font-text, sans-serif;
   }
 
   input {
