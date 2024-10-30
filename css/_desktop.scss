@@ -22,7 +22,8 @@ header {
                 &:hover {
                     transform: translateX(20px);
                 }
-                a{
+
+                a {
                     font-size: 50px;
                 }
             }
@@ -70,6 +71,7 @@ header {
 .page2,
 .page3 {
     grid-column: span 11;
+    min-height: 100vh;
 
 }
 
@@ -167,6 +169,7 @@ header {
     }
 
     .image-container {
+
         .img1,
         .img2,
         .img3 {
@@ -266,6 +269,7 @@ header {
             width: rem(240);
             font-size: rem(25);
             margin-left: rem(5);
+            height: rem(30);
         }
     }
 
