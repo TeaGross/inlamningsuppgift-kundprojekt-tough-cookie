@@ -3,7 +3,6 @@ main {
     grid-template-columns: repeat(12, 1fr);
 }
 
-
 header {
     height: 100%;
     text-align: center;
@@ -11,14 +10,13 @@ header {
     grid-row: span 3; // span över alla tre sidor
     position: static;
 
-
     nav {
         left: calc(100%/12 - rem(16)); // gör att naven lägger sig BREDVID headern. Calc=uträkning 100vw är hela skärmen/ 12 grid-colums och minus ett gap(16px).
         top: 0;
 
         ul {
             li {
-                margin-right: 350px;
+                margin-right: 250px;
                 transition: transform 0.5s;
 
                 &:hover {
@@ -35,26 +33,22 @@ header {
         position: fixed;
         top: 10vh;
         font-size: rem(42);
-
         max-width: 30px;
         word-break: break-all;
 
         .desktop-only {
-            display: block; // för att mellanrummet ska synas
+            display: block; // för mellanrum mellan tough cookie.
         }
-
     }
 
     .main-menu button {
-        left: rem(30); // hamburgermenyn
-        top: rem(20);
+        left: rem(30); //hamburgermenyn
+        top: rem(30);
 
         span {
             width: 50px;
             height: 7px;
         }
-
-
     }
 
     .checkbox {
@@ -62,14 +56,13 @@ header {
         top: rem(15);
         width: 50px;
         height: 50px;
-
     }
 }
 
 .page1,
 .page2 {
     border-left: 16px solid $yellow-color;
-    border-right: 16px solid $yellow-color; // lagt till
+    border-right: 16px solid $yellow-color;
 }
 
 
@@ -99,9 +92,8 @@ header {
         height: 50vh;
 
         .page-title {
-            grid-column: span 4; // för grid
+            grid-column: span 4;
             height: 100%;
-
         }
 
         .text1 {
@@ -175,8 +167,6 @@ header {
     }
 
     .image-container {
-        // height: 40vh; // varför fuckar detta upp? om jag tar bort förstörs hela page 2
-
         .img1,
         .img2,
         .img3 {
@@ -193,13 +183,9 @@ header {
             grid-column: span 4;
             display: inline;
         }
-
-
     }
 
     .menu {
-
-        // height: 60vh;
         .menuitem {
             grid-column: span 11;
             display: grid;
@@ -214,7 +200,6 @@ header {
                 margin: 0;
                 margin-left: 10px;
                 font-size: rem(25);
-
             }
 
             .new-label {
@@ -240,7 +225,6 @@ header {
                 grid-column: span 1;
                 font-size: rem(25);
             }
-
         }
     }
 }
@@ -279,7 +263,7 @@ header {
 
         .cancel,
         .request {
-            width: rem(225);
+            width: rem(240);
             font-size: rem(25);
             margin-left: rem(5);
         }
@@ -298,7 +282,6 @@ header {
             font-size: rem(40);
         }
     }
-
 }
 
 .cookies {
@@ -313,5 +296,4 @@ header {
         margin-left: rem(10);
         font-size: rem(25);
     }
-
 }

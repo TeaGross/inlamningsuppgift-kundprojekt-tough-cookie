@@ -72,7 +72,6 @@ header {
     }
 
     &+.main-menu button span:nth-child(3) {
-      // oklart varför detta ligger i huvudfilen-kommentar från jenni?
       transform: rotate(-45deg);
     }
 
@@ -103,7 +102,8 @@ header {
         font-family: $font-main, sans-serif;
         font-size: rem(35);
         text-transform: uppercase;
-        a{
+
+        a {
           text-decoration: none;
           color: white;
         }
@@ -163,11 +163,15 @@ img {
     .chickpeas {
       color: $yellow-color;
       position: absolute;
-      left: 0.1em; // har ej placerat exakt enligt designen för att förbättra läsmöjlighet för användaren.
+      left: 0.1em; // har ej placerat exakt enligt designen för att förbättra läsmöjlighet för användaren-tillgänglighet.
       bottom: -0.50em;
       margin: 0;
       font-size: 0.45em;
     }
+  }
+
+  .text1 {
+    color: $green-color;
   }
 
   .image {
@@ -183,6 +187,10 @@ img {
   }
 
   .text2 {
+    color: #895ece; // Annan färg på denna text eftersom kontrasten blir för låg annars.
+    background-color: white;
+    border-left: rem(16) solid $yellow-color;
+
     span {
       text-transform: uppercase;
       color: black;
@@ -197,17 +205,7 @@ img {
       margin-left: rem(8);
     }
 
-  }
-
-  .text1 {
-    color: $green-color;
-  }
-
-  .text2 {
-    color: #895ece; // Annan färg på denna text eftersom kontrasten blir för låg annars.
-    background-color: white;
-    border-left: rem(16) solid $yellow-color; 
-    a{
+    a {
       text-decoration: none;
     }
   }
@@ -226,15 +224,10 @@ img {
   .menu {
     .menuitem {
       background-color: white;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: space-evenly;
 
       h3 {
         font-family: $font-main, sans-serif;
         text-transform: uppercase;
-        letter-spacing: rem(2);
-        font-size: rem(25);
       }
 
       p {
@@ -302,13 +295,10 @@ img {
     }
 
     h4 {
-      font-size: rem(30);
       text-transform: uppercase;
     }
 
     label {
-      width: rem(70);
-      margin-right: 1em;
       text-transform: uppercase;
 
     }
@@ -324,10 +314,7 @@ img {
   }
 
   input {
-    border-radius: rem(9);
     border: none;
-    width: rem(120); // styling för mobil?
-
   }
 
   .cancel,
@@ -336,16 +323,12 @@ img {
   }
 
   .contact {
-    // max-width: 300px;
-    // position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 
     div {
-      width: 300px;
-      height: 300px;
       position: relative;
     }
 
@@ -402,8 +385,6 @@ img {
   right: 0;
   bottom: 0;
   z-index: 1;
-  padding: 20px;
-
 
   p {
     color: white;
